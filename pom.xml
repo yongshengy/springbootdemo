@@ -8,5 +8,9 @@
     <artifactId>springbootdemo</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <modules>
+        <module>demo</module>
+        <module>demo-configuration</module>
+    </modules>
 
 </project>
