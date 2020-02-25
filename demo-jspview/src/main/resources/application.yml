@@ -1,0 +1,15 @@
+server:
+  port: 8080                      #端口
+  servlet:
+    context-path: /               #项目访问路径
+    session:
+      cookie:                     #cookie 失效时间，单位为秒
+        max-age: 100
+      timeout: 100                #session 失效时间，单位为秒
+  tomcat:
+    uri-encoding: UTF-8           #请求编码格式
+spring:
+  mvc:
+    view:
+      prefix: /                   #视图资源所在路径
+      suffix: .jsp                #视图资源的后缀

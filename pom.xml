@@ -11,6 +11,12 @@
     <modules>
         <module>demo</module>
         <module>demo-configuration</module>
+        <module>demo-jspview</module>
+        <module>demo-thymeleaf</module>
+        <module>demo-jdbctemplate</module>
+        <module>demo-mybatis</module>
+        <module>demo-springdatajpa</module>
+        <module>demo-springdataredis</module>
     </modules>
 
 </project>

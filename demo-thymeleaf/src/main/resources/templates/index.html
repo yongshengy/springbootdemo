@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<br lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<br>
+<p th:text="${name}">Hello World</p>
+
+<p th:if="${score < 90 && score >=80}">良好</p>
+<p th:unless="${score >= 60}">合格</p>
+
+<div th:switch="${userId}">
+    <p th:case="1">1</p>
+    <p th:case="2">2</p>
+</div>
+
+<form th:action="@{/login}" method="post">
+    用户名: <input type="text" name="userName"><br/>
+    <input type="submit" value="登录"/> <br/>
+</form>
+
+<div th:each="user:${list}">
+    <p th:text="${user.id}"/> --
+    <p th:text="${user.name}"/>
+</div>
+
+<input th:value="${name}"/> <br/>
+<img th:src="@{../spring.png}"/><br/>
+<img th:src="${src}"/><br/>
+<a th:href="@{http://www.baidu.com}">Baidu</a></br>
+<select>
+    <option th:each="user:${list}" th:value="${user.id}" th:text="${user.name}" th:selected="${user.name == 'li'}"></option>
+</select>
+
+<br/>
+
+<input th:attr="value=${name}"/></br>
+
+<p th:text="${session.name}"/></br>
+<p th:text="${#session.getAttribute('name')}"/></br>
+
+<p th:text="${#dates.createNow()}"/></br>
+</body>
+</html>
