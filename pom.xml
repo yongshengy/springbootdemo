@@ -17,6 +17,10 @@
         <module>demo-mybatis</module>
         <module>demo-springdatajpa</module>
         <module>demo-springdataredis</module>
+        <module>demo-redissession</module>
+        <module>demo-springdatamongodb</module>
+        <module>demo-springsecurity</module>
+        <module>shopping</module>
     </modules>
 
 </project>
