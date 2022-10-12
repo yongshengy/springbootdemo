@@ -8,11 +8,14 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.5.RELEASE</version>
+        <relativePath/>
     </parent>
 
     <groupId>local.test.springboot</groupId>
     <artifactId>demo-springdataredis</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <name>demo-springdataredis</name>
+    <description>Demo redis</description>
 
     <dependencies>
         <dependency>

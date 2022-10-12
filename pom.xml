@@ -7,6 +7,7 @@
     <groupId>local.test.springboot</groupId>
     <artifactId>springbootdemo</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <modules>
         <module>demo</module>
@@ -21,6 +22,7 @@
         <module>demo-springdatamongodb</module>
         <module>demo-springsecurity</module>
         <module>shopping</module>
+        <module>demo-springkafka</module>
     </modules>
 
 </project>
